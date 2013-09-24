@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Responsive web design</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="offcanvas.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+  <style type="text/css">
+    .container {max-width: 850px;}
+    .img-responsive {
+      display: block;
+      height: auto;
+      max-width: 100%;
+    }
+  </style>
+</head>
+
+  <body>
+    <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Responsive web design</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.container -->
+    </div><!-- /.navbar -->
+
+    <div class="container">
+
+      <div class="row row-offcanvas row-offcanvas-right">
+        <div class="col-xs-12 col-sm-9">
+          <p class="pull-right visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+          </p>
+          <div class="jumbotron">
+            <h1>Responsive web design ..</h1>
+            <p> .. is a web design approach aimed at crafting sites to provide an optimal viewing experience—easy reading and navigation with a minimum of resizing, panning, and scrolling—across a wide range of devices (from mobile phones to desktop computer monitors).</p>
+          </div>
+          <div class="row">
+            <div class="col-9" style="padding:10px;">
+              <p>A site designed with RWD adapts the layout to the viewing environment by using fluid, proportion-based grids, flexible images, and CSS3 media queries, an extension of the @media rule.</p>
+              <p>The fluid grid concept calls for page element sizing to be in relative units like percentages, rather than absolute units like pixels or points.</p>
+              <p>Flexible images are also sized in relative units, so as to prevent them from displaying outside their containing element.
+              Media queries allow the page to use different CSS style rules based on characteristics of the device the site is being displayed on, most commonly the width of the browser.</p>
+              <p>Server-side components (RESS) in conjunction with client-side ones such as media queries can produce faster-loading sites for access over cellular networks and also deliver richer functionality/usability avoiding some of the pitfalls of device-side-only solutions.</p>
+              <h2>Related Concepts</h2>
+              <h3>Mobile first, unobtrusive JavaScript, and progressive enhancement</h3>
+              <p>"Mobile first", unobtrusive JavaScript, and progressive enhancement (strategies for when a new site design is being considered) are related concepts that predated RWD: browsers of basic mobile phones do not understand JavaScript or media queries, so the recommended practice is to create a basic web site, and enhance it for smart phones and PCs—rather than try to make a complex, image-heavy site work on the most basic mobile phones.</p>
+              <h3>Progressive enhancement based on browser-, device-, or feature-detection</h3>
+              <p>Where a web site must support basic mobile devices that lack JavaScript, browser ("user agent") detection, and mobile device detection are two ways of deducing if certain HTML and CSS features are supported (as a basis for progressive enhancement)—however, these methods are not completely reliable unless used in conjunction with a device capabilities database.</p>
+              <p>For more capable mobile phones and PCs, that can directly test browser support for HTML/CSS features (or identify the device or user agent) are popular. Polyfills can be used to add support for features—e.g. to support media queries (required for RWD), and enhance HTML5 support, on Internet Explorer. Feature detection also might not be completely reliable: some may report that a feature is available, when it is either missing or so poorly implemented that it is effectively nonfunctional.</p>
+              <br/>
+              <h2>Stand on the shoulders of giants</h2>
+              <br/>
+              <p><img src="http://wooblog.s3.amazonaws.com/wp-content/uploads/2013/08/Bootstrap-for-Responsive-Web-Design-1024x407.png" class="img-responsive"></p>
+              <p><img src="http://wooblog.s3.amazonaws.com/wp-content/uploads/2013/08/Foundation4-from-Zurb-for-Responsive-Web-Design-1024x476.png" class="img-responsive"></p>
+              <p><img src="http://www.crazyxhtml.com/blog/wp-content/uploads/2013/06/html5_Boilerplate.png" class="img-responsive"></p>
+              <p><img src="http://netdna.webdesignerdepot.com/uploads/2013/03/skeleton.png" class="img-responsive"></p>
+            </div><!--/span-->
+          </div><!--/row-->
+        </div><!--/span-->
+
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+          <div class="well sidebar-nav">
+            <ul class="nav">
+              <h4>Links</h4>
+              <li><a href="#">This should be a link</a></li>
+              <li><a href="#">This should also be a link</a></li>
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <p>© 2013</p>
+      </footer>
+
+    </div><!--/.container-->
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="jquery.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="offcanvas.js"></script>
+  
+
+</body></html>
