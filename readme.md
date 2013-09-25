@@ -23,6 +23,6 @@ Read the articles provided above to gain an understanding of the principles of R
 
 ## Questions for Understanding
 
-- What browsers support Media Queries?
+- What browsers support Media Queries
 - What is a breakpoint?
 - What performance considerations are relevant to Responsive Web Design?
